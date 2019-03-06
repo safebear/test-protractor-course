@@ -2,10 +2,12 @@ var HtmlReporter = require('protractor-beautiful-reporter');
 
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
+    baseUrl: 'http://localhost:8080/',
+
     capabilities: {
-        'browserName': 'firefox'
+        'browserName': 'chrome'
       },
-      
+
     //   multiCapabilities: [{
     //     'browserName': 'firefox'
     //   }, {
@@ -19,13 +21,12 @@ exports.config = {
     //        args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
     //      }
     //   }
-      
 
-    specs: ['*.spec.js'],
+    // run a group of tests
+    specs: ['products/*.spec.js'],
     suites: {
-         products: 'products\\*.spec.js'
+         products: 'products/*.spec.js'
     },
-    baseUrl: 'http://localhost:8080/',
 
     framework: 'jasmine',
     onPrepare: function() {
@@ -36,3 +37,4 @@ exports.config = {
         }).getJasmine2Reporter());
     },
 };
+
