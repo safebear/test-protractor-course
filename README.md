@@ -12,10 +12,12 @@ Set up your GitHub repository with a `README.md` and `.gitignore` file
  npm install jasmine-data-provider --save-dev // what's this?
 ```
 
-Then create your framework by creating these folders:
-> test
->> page_objects
->> products
+Then create your framework by creating a `test` folder and then adding:
+
+A `page_objects` folder.
+A `products` folder.
+
+You can add the `ESLint` library and plugins to this framework if you'd like, as we did on the course. The underlying test framework protractor uses is `jasmine` (rather than the `mocha` and `chai` we used on the course) so add plugins for this.
 
 ## Set Up Configuration Files
 
