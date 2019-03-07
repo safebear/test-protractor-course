@@ -2,7 +2,7 @@
 
 Set up your GitHub repository with a `README.md` and `.gitignore` file
 
-## Set Up Product
+## Set Up Project
 
 ```
  npm init -y
