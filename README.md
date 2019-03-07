@@ -61,7 +61,7 @@ exports.config = {
            baseDirectory: 'tmp/screenshots',
            docTitle: 'Products Report'
         }).getJasmine2Reporter());
-    },
+    }
 };
 ```
 
