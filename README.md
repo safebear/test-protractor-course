@@ -1,20 +1,27 @@
 # test-protractor-course
 
-Set up your GitHub repository with a README and .gitignore file
+Set up your GitHub repository with a `README.md` and `.gitignore` file
 
+## Set Up Product
+
+```
  npm init -y
 
  npm install protractor --save-dev
  npm install protractor-beautiful-reporter --save-dev
  npm install jasmine-data-provider --save-dev // what's this?
+```
 
-Then create your framework:
+Then create your framework by creating these folders:
 > test
 >> page_objects
 >> products
 
-then create your `protractor.conf.js` in `tests`:
+## Set Up Configuration Files
 
+then create your `protractor.conf.js` in `tests` and add this code:
+
+```javascript
 var HtmlReporter = require('protractor-beautiful-reporter');
 
 exports.config = {
@@ -54,9 +61,21 @@ exports.config = {
         }).getJasmine2Reporter());
     },
 };
+```
 
-Then create your spec file:
+Then update your `test` script in `package.json` to the following:
 
+```json
+  "scripts": {
+    "test": "protractor ./test/protractor.conf.js"
+  },
+```
+
+## Create You Test Spec File
+
+Then create your spec file (to create a product) with the following code:
+
+```javascript
 const homePage = require('../page_objects/home.page');
 const addProductPage = require('../page_objects/add-product.page');
 const viewProductPage = require('../page_objects/view-product.page');
@@ -83,9 +102,48 @@ it('should create a product', function(){
     expect(viewProductPage.productName({name:"turbot"}).isDisplayed()).toBeTruthy();
 
 })
+```
 
+## Add Some Test Data
 
-Then update your `test` script in `package.json`
+Add a `data` folder in your `test` folder.
+
+Then create a `products.json` file in your `data` folder and add the following:
+
+```javascript
+'use strict';
+
+module.exports = {
+    productInfo: {
+        'meat': {
+            name: 'sausages',
+            description: 'thin meat',
+            price: '100'
+        },
+        'vegetables': {
+            name: 'carrots',
+            description: 'orange vegetables',
+            price: '200'
+        },
+        'bread': {
+            name: 'bloomer',
+            description: 'white bread',
+            price: '300'
+        },
+        'pasta': {
+            name: 'spaghetti',
+            description: 'long pasta',
+            price: '400'
+        }
+    }
+};
+```
+
+And then adapt the spec code to the following:
+
+```javascript
+
+```
 
 
 
