@@ -9,7 +9,7 @@ Set up your GitHub repository with a `README.md` and `.gitignore` file
 
  npm install protractor --save-dev
  npm install protractor-beautiful-reporter --save-dev
- npm install jasmine-data-provider --save-dev // what's this?
+ npm install jasmine-data-provider --save-dev 
 ```
 
 Then create your framework by creating a `test` folder and then adding:
