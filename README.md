@@ -187,6 +187,7 @@ describe("productTests", function() {
 });
 ```
 
+Run the code with the `npm test` command.
 
 
 
