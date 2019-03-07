@@ -145,7 +145,7 @@ module.exports = {
 };
 ```
 
-And then adapt the spec code to the following (see the `TEST DATA` comments in the code):
+And then adapt the spec (`products_crud.spec.js`) code to the following (see the `TEST DATA` comments in the code):
 
 ```javascript
 const homePage = require("../page_objects/home.page");
