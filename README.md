@@ -187,7 +187,7 @@ describe("productTests", function() {
 });
 ```
 
-Run the code with the `npm test` command.
+Run the code with the `npm test` command. You can run your code headlessly and plug it into Jenkins in exactly the same way you did on the course.
 
 
 
