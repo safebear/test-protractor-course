@@ -114,7 +114,7 @@ Then run your code with the `npm test` command.
 
 Add a `data` folder in your `test` folder.
 
-Then create a `products.json` file in your `data` folder and add the following:
+Then create a `product-data.module.js` file in your `data` folder and add the following:
 
 ```javascript
 'use strict';
