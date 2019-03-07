@@ -77,7 +77,7 @@ Copy the contents of your `page_objects` folder from the cucumber framework into
 
 ## Create You Test Spec File
 
-Then create your spec file (to create a product) with the following code:
+Then create your spec file to create a product (`products_crud.spec.js`) in the `products` folder with the following code:
 
 ```javascript
 const homePage = require('../page_objects/home.page');
