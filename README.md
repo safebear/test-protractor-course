@@ -75,7 +75,7 @@ Then update your `test` script in `package.json` to the following:
 
 Copy the contents of your `page_objects` folder from the cucumber framework into the `page_objects` folder for this one (we won't recreate this again!)
 
-## Create You Test Spec File
+## Create Your Test Spec File
 
 Then create your spec file to create a product (`products_crud.spec.js`) in the `products` folder with the following code:
 
